@@ -36,7 +36,7 @@ jokes = [
     punchLine: "It was a shih tzu."
   }
 ];
-//GET request, response to client
+//Send jokes to client with GET request
 app.get('/jokes', function(req, res){
 res.send(jokes);
 });
