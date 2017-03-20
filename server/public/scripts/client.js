@@ -5,6 +5,15 @@ $( document ).ready( function(){
   $( '#addJokeButton' ).on( 'click', function(){
     console.log( 'addJokeButton on click');
 
+    var jokester = $('#whoseJokeIn').val();
+    var joke = $('#questionIn').val();
+    var punchline = $('#punchlineIn').val();
+    console.log(jokester, joke, punchline);
+
+  $('#outputDiv').children().last().append('<h3>'+jokester+'</h3>');
+  $('#outputDiv').children().last().append('<p>'+joke+'</p>');
+  $('#outputDiv').children().last().append('<p>'+punchline+'</p>');
+
   }); // end addJokeButton on click
 
 $.ajax ({
