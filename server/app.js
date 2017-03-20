@@ -42,7 +42,6 @@ res.send(jokes);
 });
 
 
-
 app.get( '/', function( req, res ){
   // base url
   console.log( 'base url hit' );
