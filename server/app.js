@@ -38,7 +38,7 @@ jokes = [
 ];
 //GET request, response to client
 app.get('/jokes', function(req, res){
-  res.send('jokes are coming soon');
+res.send(jokes);
 });
 
 
