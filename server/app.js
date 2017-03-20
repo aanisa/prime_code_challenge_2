@@ -36,6 +36,12 @@ jokes = [
     punchLine: "It was a shih tzu."
   }
 ];
+//GET request, response to client
+app.get('/jokes', function(req, res){
+  res.send('jokes are coming soon');
+});
+
+
 
 app.get( '/', function( req, res ){
   // base url
